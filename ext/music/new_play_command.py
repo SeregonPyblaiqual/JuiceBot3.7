@@ -134,7 +134,7 @@ async def play(self,ctx,url):
 		print(file)
 		title = ''.join(str(x) for x in file.split('-')[1:])
 		print(title)
-		title = title.split('.')[0]
+		title = title.split('.')[:-1]
 		print(title)
 		await ctx.send('[Music] '+f'Playing: {title}')
 
