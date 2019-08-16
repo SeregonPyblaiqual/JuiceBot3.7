@@ -125,6 +125,7 @@ async def play(self,ctx,url):
 			else:
 				self.bot.auto_leave_for_guild[ctx.guild.id] = True
 				return True
+				
 		print(Consts.music_location+file)
 		voice.play(discord.FFmpegPCMAudio(Consts.music_location+file), after=lambda e:next_track(self))
 
