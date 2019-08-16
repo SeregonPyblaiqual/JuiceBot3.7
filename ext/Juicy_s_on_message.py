@@ -14,7 +14,8 @@ class Messaging(commands.Cog):
 		await self.bot.verifie_loaded_data()
 		lang_test_results = await self.bot.what_language(message)
 		message_to_send = ''
-		if message.channel != discord.DMChannel:
+		
+		if type(message.channel) != discord.DMChannel:
 			async def filter(message):
 				try:
 					await message.delete()
