@@ -63,7 +63,7 @@ class Juicy(commands.Bot):
 		self.loaded_data = await self.Saver.load()
 
 	async def what_language(self,ctx,author_id=None,member_id=None):
-		if ctx == None and member_id != None:
+		if ctx == None or member_id != None:
 			author_id = member_id
 			guild_id = None
 		elif ctx.guild != None:
