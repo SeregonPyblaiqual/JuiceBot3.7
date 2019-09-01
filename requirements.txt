@@ -4,3 +4,4 @@ aiohttp
 youtube-dl
 requests
 scrapy
+ffmpeg
